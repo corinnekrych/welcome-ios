@@ -34,6 +34,22 @@
 		8A66DB011C63A61500AF9FCC /* DataBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB001C63A61500AF9FCC /* DataBrowserViewController.m */; };
 		8A66DB041C63A65200AF9FCC /* NativeAppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB031C63A65200AF9FCC /* NativeAppInfoViewController.m */; };
 		8A66DB071C63A67D00AF9FCC /* CloudIntegrationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB061C63A67D00AF9FCC /* CloudIntegrationsViewController.m */; };
+		8A66DB141C63BC7B00AF9FCC /* plugins_loggly.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB081C63BC7B00AF9FCC /* plugins_loggly.png */; };
+		8A66DB151C63BC7B00AF9FCC /* plugins_mixpanel.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB091C63BC7B00AF9FCC /* plugins_mixpanel.png */; };
+		8A66DB161C63BC7B00AF9FCC /* plugins_mysql.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0A1C63BC7B00AF9FCC /* plugins_mysql.png */; };
+		8A66DB171C63BC7B00AF9FCC /* plugins_oracle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0B1C63BC7B00AF9FCC /* plugins_oracle.png */; };
+		8A66DB181C63BC7B00AF9FCC /* plugins_paypal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0C1C63BC7B00AF9FCC /* plugins_paypal.png */; };
+		8A66DB191C63BC7B00AF9FCC /* plugins_postgresql.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0D1C63BC7B00AF9FCC /* plugins_postgresql.png */; };
+		8A66DB1A1C63BC7B00AF9FCC /* plugins_rabbitmq.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0E1C63BC7B00AF9FCC /* plugins_rabbitmq.png */; };
+		8A66DB1B1C63BC7B00AF9FCC /* plugins_s3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB0F1C63BC7B00AF9FCC /* plugins_s3.png */; };
+		8A66DB1C1C63BC7B00AF9FCC /* plugins_salesforce.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB101C63BC7B00AF9FCC /* plugins_salesforce.png */; };
+		8A66DB1D1C63BC7B00AF9FCC /* plugins_sendgrid.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB111C63BC7B00AF9FCC /* plugins_sendgrid.png */; };
+		8A66DB1E1C63BC7B00AF9FCC /* plugins_stripe.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB121C63BC7B00AF9FCC /* plugins_stripe.png */; };
+		8A66DB1F1C63BC7B00AF9FCC /* plugins_twilio.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB131C63BC7B00AF9FCC /* plugins_twilio.png */; };
+		8A66DB241C6400B400AF9FCC /* home_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB201C6400B400AF9FCC /* home_cloud.png */; };
+		8A66DB251C6400B400AF9FCC /* home_data.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB211C6400B400AF9FCC /* home_data.png */; };
+		8A66DB261C6400B400AF9FCC /* home_location.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB221C6400B400AF9FCC /* home_location.png */; };
+		8A66DB271C6400B400AF9FCC /* home_push.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A66DB231C6400B400AF9FCC /* home_push.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +112,22 @@
 		8A66DB031C63A65200AF9FCC /* NativeAppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppInfoViewController.m; sourceTree = "<group>"; };
 		8A66DB051C63A67D00AF9FCC /* CloudIntegrationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudIntegrationsViewController.h; sourceTree = "<group>"; };
 		8A66DB061C63A67D00AF9FCC /* CloudIntegrationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudIntegrationsViewController.m; sourceTree = "<group>"; };
+		8A66DB081C63BC7B00AF9FCC /* plugins_loggly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_loggly.png; sourceTree = "<group>"; };
+		8A66DB091C63BC7B00AF9FCC /* plugins_mixpanel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_mixpanel.png; sourceTree = "<group>"; };
+		8A66DB0A1C63BC7B00AF9FCC /* plugins_mysql.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_mysql.png; sourceTree = "<group>"; };
+		8A66DB0B1C63BC7B00AF9FCC /* plugins_oracle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_oracle.png; sourceTree = "<group>"; };
+		8A66DB0C1C63BC7B00AF9FCC /* plugins_paypal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_paypal.png; sourceTree = "<group>"; };
+		8A66DB0D1C63BC7B00AF9FCC /* plugins_postgresql.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_postgresql.png; sourceTree = "<group>"; };
+		8A66DB0E1C63BC7B00AF9FCC /* plugins_rabbitmq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_rabbitmq.png; sourceTree = "<group>"; };
+		8A66DB0F1C63BC7B00AF9FCC /* plugins_s3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_s3.png; sourceTree = "<group>"; };
+		8A66DB101C63BC7B00AF9FCC /* plugins_salesforce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_salesforce.png; sourceTree = "<group>"; };
+		8A66DB111C63BC7B00AF9FCC /* plugins_sendgrid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_sendgrid.png; sourceTree = "<group>"; };
+		8A66DB121C63BC7B00AF9FCC /* plugins_stripe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_stripe.png; sourceTree = "<group>"; };
+		8A66DB131C63BC7B00AF9FCC /* plugins_twilio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plugins_twilio.png; sourceTree = "<group>"; };
+		8A66DB201C6400B400AF9FCC /* home_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_cloud.png; sourceTree = "<group>"; };
+		8A66DB211C6400B400AF9FCC /* home_data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_data.png; sourceTree = "<group>"; };
+		8A66DB221C6400B400AF9FCC /* home_location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_location.png; sourceTree = "<group>"; };
+		8A66DB231C6400B400AF9FCC /* home_push.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_push.png; sourceTree = "<group>"; };
 		ABB4652A8D61789B93D24D77 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BCB111B0D4F872D2C8439 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA663524E4341FF2F39871FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +225,22 @@
 		8A3BC6961C60E5B8009792FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A66DB201C6400B400AF9FCC /* home_cloud.png */,
+				8A66DB211C6400B400AF9FCC /* home_data.png */,
+				8A66DB221C6400B400AF9FCC /* home_location.png */,
+				8A66DB231C6400B400AF9FCC /* home_push.png */,
+				8A66DB081C63BC7B00AF9FCC /* plugins_loggly.png */,
+				8A66DB091C63BC7B00AF9FCC /* plugins_mixpanel.png */,
+				8A66DB0A1C63BC7B00AF9FCC /* plugins_mysql.png */,
+				8A66DB0B1C63BC7B00AF9FCC /* plugins_oracle.png */,
+				8A66DB0C1C63BC7B00AF9FCC /* plugins_paypal.png */,
+				8A66DB0D1C63BC7B00AF9FCC /* plugins_postgresql.png */,
+				8A66DB0E1C63BC7B00AF9FCC /* plugins_rabbitmq.png */,
+				8A66DB0F1C63BC7B00AF9FCC /* plugins_s3.png */,
+				8A66DB101C63BC7B00AF9FCC /* plugins_salesforce.png */,
+				8A66DB111C63BC7B00AF9FCC /* plugins_sendgrid.png */,
+				8A66DB121C63BC7B00AF9FCC /* plugins_stripe.png */,
+				8A66DB131C63BC7B00AF9FCC /* plugins_twilio.png */,
 				8A3BC6DA1C613EAB009792FB /* ic_cloud.png */,
 				8A3BC6DB1C613EAB009792FB /* ic_data.png */,
 				8A3BC6DC1C613EAB009792FB /* ic_home.png */,
@@ -341,17 +389,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A3BC6D61C60F2DB009792FB /* menu.png in Resources */,
+				8A66DB261C6400B400AF9FCC /* home_location.png in Resources */,
+				8A66DB1F1C63BC7B00AF9FCC /* plugins_twilio.png in Resources */,
+				8A66DB241C6400B400AF9FCC /* home_cloud.png in Resources */,
 				8A3BC6E81C613EAB009792FB /* ic_push.png in Resources */,
+				8A66DB151C63BC7B00AF9FCC /* plugins_mixpanel.png in Resources */,
+				8A66DB1C1C63BC7B00AF9FCC /* plugins_salesforce.png in Resources */,
 				8A3BC6E61C613EAB009792FB /* ic_integration.png in Resources */,
+				8A66DB171C63BC7B00AF9FCC /* plugins_oracle.png in Resources */,
+				8A66DB181C63BC7B00AF9FCC /* plugins_paypal.png in Resources */,
 				8A3BC6A61C60E5B8009792FB /* LaunchScreen.storyboard in Resources */,
 				8A3BC6E41C613EAB009792FB /* ic_home.png in Resources */,
 				8A3BC6D71C60F2DB009792FB /* menu@2x.png in Resources */,
+				8A66DB1D1C63BC7B00AF9FCC /* plugins_sendgrid.png in Resources */,
+				8A66DB141C63BC7B00AF9FCC /* plugins_loggly.png in Resources */,
+				8A66DB1A1C63BC7B00AF9FCC /* plugins_rabbitmq.png in Resources */,
+				8A66DB1B1C63BC7B00AF9FCC /* plugins_s3.png in Resources */,
 				8A3BC6E31C613EAB009792FB /* ic_data.png in Resources */,
 				8A3BC6E71C613EAB009792FB /* ic_location.png in Resources */,
 				8A3BC6A31C60E5B8009792FB /* Assets.xcassets in Resources */,
+				8A66DB161C63BC7B00AF9FCC /* plugins_mysql.png in Resources */,
 				8A3BC6A11C60E5B8009792FB /* Main.storyboard in Resources */,
 				8A3BC6E91C613EAB009792FB /* ic_statistics.png in Resources */,
+				8A66DB191C63BC7B00AF9FCC /* plugins_postgresql.png in Resources */,
+				8A66DB1E1C63BC7B00AF9FCC /* plugins_stripe.png in Resources */,
 				8A3BC6E51C613EAB009792FB /* ic_info.png in Resources */,
+				8A66DB251C6400B400AF9FCC /* home_data.png in Resources */,
+				8A66DB271C6400B400AF9FCC /* home_push.png in Resources */,
 				8A3BC6E21C613EAB009792FB /* ic_cloud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,4 +4,6 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *locationButton;
+
 @end

@@ -55,6 +55,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7rB-qi-y4F" kind="custom" identifier="home" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="xKP-ms-QJP"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cloud" id="I3s-Jw-Tm0">
                                 <rect key="frame" x="0.0" y="72" width="414" height="44"/>
@@ -240,7 +243,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XAA-Jo-pCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="-1698"/>
+            <point key="canvasLocation" x="2302" y="-1754"/>
         </scene>
         <!--Location Example-->
         <scene sceneID="y4E-5g-Ms8">
@@ -253,6 +256,22 @@
                     <view key="view" contentMode="scaleToFill" id="e27-ie-Tsk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Let's grab your location and do something with it. Tap the button to find your location." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qod-Ii-jlm">
+                                <rect key="frame" x="9" y="72" width="397" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nO-tJ-1B6">
+                                <rect key="frame" x="9" y="136" width="397" height="30"/>
+                                <state key="normal" title="Get My Location"/>
+                                <connections>
+                                    <action selector="callCloud:" destination="cic-Oy-OLm" eventType="touchUpInside" id="Vlf-j4-Wj5"/>
+                                    <action selector="geMytLocation:" destination="y39-h9-FP0" eventType="touchUpInside" id="EIF-Mg-qCz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Location Example" id="Qvo-Mn-SgB">
@@ -260,12 +279,13 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="locationButton" destination="6nO-tJ-1B6" id="9wQ-XG-OEQ"/>
                         <outlet property="sidebarButton" destination="wrp-68-TXg" id="kum-UE-832"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="so8-QX-Ocp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="-1698"/>
+            <point key="canvasLocation" x="2836" y="-1754"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qPc-Zn-FUE">
@@ -282,7 +302,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ogW-sa-31b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="-843"/>
+            <point key="canvasLocation" x="2302" y="-899"/>
         </scene>
         <!--Data Browser-->
         <scene sceneID="OoK-10-SdE">
@@ -295,6 +315,28 @@
                     <view key="view" contentMode="scaleToFill" id="q6c-IX-yC5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6h-Rr-UYB">
+                                <rect key="frame" x="9" y="72" width="397" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">First go to the Data Browser menu in your cloud code in the Studio and enable it. Then enter your name here and tap the button to save your name in our cloud database.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-A4-5hz">
+                                <rect key="frame" x="9" y="183" width="397" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="callCloud:" destination="cic-Oy-OLm" eventType="touchUpInside" id="Rjm-h4-Lyx"/>
+                                    <action selector="saveData:" destination="UCK-2C-ScY" eventType="touchUpInside" id="1vv-2u-OVT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-un-2ZI">
+                                <rect key="frame" x="9" y="145" width="397" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Data Browser" id="pli-Bm-DmP">
@@ -302,12 +344,14 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="dataTextFiedl" destination="HSS-un-2ZI" id="LZr-MP-Kes"/>
+                        <outlet property="saveButton" destination="nP0-A4-5hz" id="38O-ql-Jzk"/>
                         <outlet property="sidebarButton" destination="3XP-K8-daF" id="2B3-Ir-uDr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hGt-kW-QoB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="-843"/>
+            <point key="canvasLocation" x="2836" y="-899"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="imC-YP-yzn">
@@ -324,7 +368,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JS3-tF-gZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="5"/>
+            <point key="canvasLocation" x="2302" y="-51"/>
         </scene>
         <!--Native App Info-->
         <scene sceneID="MMx-vW-4MN">
@@ -348,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swn-l7-aaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="5"/>
+            <point key="canvasLocation" x="2836" y="-51"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wsv-Lt-g8A">
@@ -365,7 +409,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWA-Tk-Lw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="846"/>
+            <point key="canvasLocation" x="2302" y="790"/>
         </scene>
         <!--Cloud Integrations-->
         <scene sceneID="jev-PM-dUv">
@@ -378,6 +422,51 @@
                     <view key="view" contentMode="scaleToFill" id="aw7-ea-GfG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anr-bd-jbu">
+                                <rect key="frame" x="9" y="72" width="397" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You can easily integrate with all of your existing back-end systems using Cloud Plugins. Check out the App Studio to see how to connect to Databases, Messaging, Analytics, SaaS, eCommerce, Logging, Data Storage, Testing Tools and File Storage. A few examples including</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_mysql.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufF-KX-y0M">
+                                <rect key="frame" x="28" y="196" width="103" height="111"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_paypal.png" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-fB-keq">
+                                <rect key="frame" x="286" y="436" width="110" height="119"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_loggly.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsZ-Fh-JnH">
+                                <rect key="frame" x="24" y="324" width="88" height="111"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_oracle.png" translatesAutoresizingMaskIntoConstraints="NO" id="bEM-Kf-gxr">
+                                <rect key="frame" x="145" y="188" width="107" height="117"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_s3.png" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-GE-Xwc">
+                                <rect key="frame" x="157" y="324" width="101" height="110"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_mixpanel.png" translatesAutoresizingMaskIntoConstraints="NO" id="dZ1-O2-PAb">
+                                <rect key="frame" x="281" y="314" width="119" height="129"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_stripe.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOl-DY-8ct">
+                                <rect key="frame" x="282" y="188" width="118" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_sendgrid.png" translatesAutoresizingMaskIntoConstraints="NO" id="flS-mb-84E">
+                                <rect key="frame" x="157" y="441" width="101" height="109"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_rabbitmq.png" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-5Q-0oL">
+                                <rect key="frame" x="20" y="568" width="118" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_postgresql.png" translatesAutoresizingMaskIntoConstraints="NO" id="EdV-eg-EBE">
+                                <rect key="frame" x="152" y="572" width="111" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_salesforce.png" translatesAutoresizingMaskIntoConstraints="NO" id="Egm-us-1a7">
+                                <rect key="frame" x="20" y="452" width="111" height="87"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plugins_twilio.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vhh-Ci-arJ">
+                                <rect key="frame" x="291" y="578" width="100" height="108"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cloud Integrations" id="fR8-Ma-TEt">
@@ -390,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zg6-uz-VGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="846"/>
+            <point key="canvasLocation" x="2836" y="790"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tcg-cj-KTD">
@@ -420,7 +509,19 @@
                     <view key="view" contentMode="scaleToFill" id="vwv-Pd-p3J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comming soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-ZA-LpV">
+                                <rect key="frame" x="147" y="357" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5NM-ZA-LpV" firstAttribute="centerX" secondItem="vwv-Pd-p3J" secondAttribute="centerX" id="EWJ-NW-PMl"/>
+                            <constraint firstItem="5NM-ZA-LpV" firstAttribute="centerY" secondItem="vwv-Pd-p3J" secondAttribute="centerY" id="XfO-wh-hBU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Push Notification" id="hdW-NH-aTs">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="HTg-Dg-yxp"/>
@@ -449,7 +550,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DJS-MQ-Oer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="-3527"/>
+            <point key="canvasLocation" x="2302" y="-3450"/>
         </scene>
         <!--Call Cloud-->
         <scene sceneID="u6f-eO-V05">
@@ -462,6 +563,22 @@
                     <view key="view" contentMode="scaleToFill" id="0Yw-Ev-xrL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b6-qs-PTh">
+                                <rect key="frame" x="8" y="72" width="397" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">This client app is now connected to its matching Node.js cloud code on FeedHenry. Tap the button to request a response from the cloud.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLr-sc-dFl">
+                                <rect key="frame" x="8" y="155" width="397" height="30"/>
+                                <state key="normal" title="Call Cloud"/>
+                                <connections>
+                                    <action selector="callCloud:" destination="cic-Oy-OLm" eventType="touchUpInside" id="dY2-M0-jqg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Call Cloud" id="DAG-Xw-knQ">
@@ -469,12 +586,13 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="callButton" destination="RLr-sc-dFl" id="RA7-83-B98"/>
                         <outlet property="sidebarButton" destination="uh8-gv-Vau" id="18k-lk-0g9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIH-PP-yyd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="-3527"/>
+            <point key="canvasLocation" x="2836" y="-3450"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1MB-iy-jj4">
@@ -491,7 +609,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2qa-i6-Tbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2302" y="1686"/>
+            <point key="canvasLocation" x="2302" y="1630"/>
         </scene>
         <!--Status-->
         <scene sceneID="saH-3J-dDE">
@@ -505,8 +623,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BAK-T0-XGX">
-                                <rect key="frame" x="9" y="72" width="397" height="656"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAK-T0-XGX">
+                                <rect key="frame" x="9" y="72" width="397" height="149"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">In addition to all of our app install/usage analytics, you can also instrument your cloud code to see exactly how it's performing. Go to the stats section of the Studio and see if your device has been detected</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -525,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sw2-6I-rOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="1678"/>
+            <point key="canvasLocation" x="2836" y="1622"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="pSk-jM-8Yj">
@@ -539,12 +657,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIW-My-z0i">
-                                <rect key="frame" x="184" y="357" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yno-8R-XbN">
+                                <rect key="frame" x="0.0" y="64" width="414" height="203"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4q-4n-ZJJ">
+                                        <rect key="frame" x="44" y="43" width="327" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FeedHenry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-qL-urA">
+                                        <rect key="frame" x="44" y="81" width="327" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn more about and interact with our plataform" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfm-h4-snd">
+                                        <rect key="frame" x="20" y="137" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloud Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlS-8W-FhT">
+                                <rect key="frame" x="56" y="444" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push Notification" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq7-Qv-Q1U">
+                                <rect key="frame" x="213" y="444" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-zi-N0Q">
+                                <rect key="frame" x="74" y="676" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data Browser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k4-Yd-4d0">
+                                <rect key="frame" x="228" y="676" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-FO-ix2">
+                                <rect key="frame" x="54" y="296" width="140" height="140"/>
+                                <state key="normal" title="Button" image="home_cloud.png"/>
+                                <connections>
+                                    <action selector="navigateToCould:" destination="MzF-Fd-ilQ" eventType="touchUpInside" id="22s-oL-jtt"/>
+                                    <segue destination="eDn-ho-IgL" kind="custom" identifier="cloud" customClass="SWRevealViewControllerSeguePushController" id="gE0-WK-AeG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrA-ev-dtX">
+                                <rect key="frame" x="54" y="528" width="140" height="140"/>
+                                <state key="normal" title="Button" image="home_location.png"/>
+                                <connections>
+                                    <action selector="navigateToLocation:" destination="MzF-Fd-ilQ" eventType="touchUpInside" id="vfz-jC-dKV"/>
+                                    <segue destination="8rK-2u-J5L" kind="custom" identifier="location" customClass="SWRevealViewControllerSeguePushController" id="PrI-7G-VJU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAw-W2-qwW">
+                                <rect key="frame" x="225" y="528" width="140" height="140"/>
+                                <state key="normal" title="Button" image="home_data.png"/>
+                                <connections>
+                                    <action selector="navigateToData:" destination="MzF-Fd-ilQ" eventType="touchUpInside" id="hR2-VP-aKp"/>
+                                    <segue destination="04b-Gd-s3A" kind="custom" identifier="data" customClass="SWRevealViewControllerSeguePushController" id="gM8-21-tOj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-bU-ath">
+                                <rect key="frame" x="225" y="296" width="140" height="140"/>
+                                <state key="normal" title="Button" image="home_push.png"/>
+                                <connections>
+                                    <action selector="navigateToPush:" destination="MzF-Fd-ilQ" eventType="touchUpInside" id="xQH-KH-Vwe"/>
+                                    <segue destination="otF-PZ-3RO" kind="custom" identifier="push" customClass="SWRevealViewControllerSeguePushController" id="LEc-DP-JuS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -552,12 +744,16 @@
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="uij-v0-ZpA"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="cloudButton" destination="hwn-FO-ix2" id="Gnk-qH-Jwp"/>
+                        <outlet property="dataButton" destination="JAw-W2-qwW" id="uY7-sX-ysG"/>
+                        <outlet property="locationButton" destination="lrA-ev-dtX" id="Cxb-l0-iDq"/>
+                        <outlet property="pushButton" destination="yFL-bU-ath" id="rva-H5-Gdy"/>
                         <outlet property="sidebarButton" destination="uij-v0-ZpA" id="2W9-WZ-xGj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMt-os-dGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="1485"/>
+            <point key="canvasLocation" x="1181" y="1573"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jOG-sE-ZrU">
@@ -574,10 +770,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vo-gG-8yS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="235" y="1485"/>
+            <point key="canvasLocation" x="499" y="1573"/>
         </scene>
     </scenes>
     <resources>
+        <image name="home_cloud.png" width="300" height="300"/>
+        <image name="home_data.png" width="300" height="300"/>
+        <image name="home_location.png" width="300" height="300"/>
+        <image name="home_push.png" width="300" height="300"/>
         <image name="ic_cloud.png" width="36" height="36"/>
         <image name="ic_data.png" width="36" height="36"/>
         <image name="ic_home.png" width="36" height="36"/>
@@ -587,5 +787,24 @@
         <image name="ic_push.png" width="36" height="36"/>
         <image name="ic_statistics.png" width="36" height="36"/>
         <image name="menu.png" width="28" height="20"/>
+        <image name="plugins_loggly.png" width="125" height="125"/>
+        <image name="plugins_mixpanel.png" width="125" height="125"/>
+        <image name="plugins_mysql.png" width="117" height="125"/>
+        <image name="plugins_oracle.png" width="111" height="125"/>
+        <image name="plugins_paypal.png" width="125" height="125"/>
+        <image name="plugins_postgresql.png" width="117" height="125"/>
+        <image name="plugins_rabbitmq.png" width="117" height="125"/>
+        <image name="plugins_s3.png" width="117" height="125"/>
+        <image name="plugins_salesforce.png" width="159" height="125"/>
+        <image name="plugins_sendgrid.png" width="171" height="125"/>
+        <image name="plugins_stripe.png" width="125" height="125"/>
+        <image name="plugins_twilio.png" width="88" height="125"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LEc-DP-JuS"/>
+        <segue reference="xKP-ms-QJP"/>
+        <segue reference="gM8-21-tOj"/>
+        <segue reference="gE0-WK-AeG"/>
+        <segue reference="PrI-7G-VJU"/>
+    </inferredMetricsTieBreakers>
 </document>

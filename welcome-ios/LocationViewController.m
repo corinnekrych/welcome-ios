@@ -12,6 +12,12 @@
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+}
+
+- (IBAction)geMytLocation:(id)sender {
+    NSLog(@"Get My Location was clicked");
 }
 
 @end
