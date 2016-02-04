@@ -1,4 +1,5 @@
 #import "SidebarViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SidebarViewController ()
 
@@ -11,7 +12,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    cellsId = [@[@"home", @"cloud", @"push", @"location", @"data", @"info", @"integration", @"status"] mutableCopy];
+    cellsId = [@[@"home", @"cloud", @"push", @"location", @"data", @"info", @"integration", @"stats"] mutableCopy];
 }
 
 #pragma mark - Table view data source
@@ -37,21 +38,15 @@
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NO;
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:cell.reuseIdentifier sender:self];
 }
 
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    return NO;
-}
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 
 @end
