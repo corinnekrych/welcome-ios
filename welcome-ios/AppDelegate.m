@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  welcome-ios
-//
-//  Created by Daniel Passos on 2/2/16.
-//  Copyright © 2016 Red Hat. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()

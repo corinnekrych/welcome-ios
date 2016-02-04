@@ -1,13 +1,7 @@
-//
-//  SidebarViewController.h
-//  welcome-ios
-//
-//  Created by Daniel Passos on 2/2/16.
-//  Copyright © 2016 Red Hat. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 @interface SidebarViewController : UITableViewController
+
+@property(nonatomic, strong) IBOutlet UITableView *menuTableView;
 
 @end
