@@ -28,6 +28,12 @@
 		8A3BC6E81C613EAB009792FB /* ic_push.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A3BC6E01C613EAB009792FB /* ic_push.png */; };
 		8A3BC6E91C613EAB009792FB /* ic_statistics.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A3BC6E11C613EAB009792FB /* ic_statistics.png */; };
 		8A66DAF51C638BB000AF9FCC /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DAF41C638BB000AF9FCC /* StatisticsViewController.m */; };
+		8A66DAF81C63A56E00AF9FCC /* CallCloudViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DAF71C63A56E00AF9FCC /* CallCloudViewController.m */; };
+		8A66DAFB1C63A5A700AF9FCC /* PushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DAFA1C63A5A700AF9FCC /* PushNotificationViewController.m */; };
+		8A66DAFE1C63A5DF00AF9FCC /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DAFD1C63A5DF00AF9FCC /* LocationViewController.m */; };
+		8A66DB011C63A61500AF9FCC /* DataBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB001C63A61500AF9FCC /* DataBrowserViewController.m */; };
+		8A66DB041C63A65200AF9FCC /* NativeAppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB031C63A65200AF9FCC /* NativeAppInfoViewController.m */; };
+		8A66DB071C63A67D00AF9FCC /* CloudIntegrationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A66DB061C63A67D00AF9FCC /* CloudIntegrationsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,18 @@
 		8A3BC6E11C613EAB009792FB /* ic_statistics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_statistics.png; sourceTree = "<group>"; };
 		8A66DAF31C638BB000AF9FCC /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
 		8A66DAF41C638BB000AF9FCC /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		8A66DAF61C63A56E00AF9FCC /* CallCloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallCloudViewController.h; sourceTree = "<group>"; };
+		8A66DAF71C63A56E00AF9FCC /* CallCloudViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallCloudViewController.m; sourceTree = "<group>"; };
+		8A66DAF91C63A5A700AF9FCC /* PushNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNotificationViewController.h; sourceTree = "<group>"; };
+		8A66DAFA1C63A5A700AF9FCC /* PushNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNotificationViewController.m; sourceTree = "<group>"; };
+		8A66DAFC1C63A5DF00AF9FCC /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		8A66DAFD1C63A5DF00AF9FCC /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		8A66DAFF1C63A61500AF9FCC /* DataBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBrowserViewController.h; sourceTree = "<group>"; };
+		8A66DB001C63A61500AF9FCC /* DataBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBrowserViewController.m; sourceTree = "<group>"; };
+		8A66DB021C63A65200AF9FCC /* NativeAppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAppInfoViewController.h; sourceTree = "<group>"; };
+		8A66DB031C63A65200AF9FCC /* NativeAppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppInfoViewController.m; sourceTree = "<group>"; };
+		8A66DB051C63A67D00AF9FCC /* CloudIntegrationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudIntegrationsViewController.h; sourceTree = "<group>"; };
+		8A66DB061C63A67D00AF9FCC /* CloudIntegrationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudIntegrationsViewController.m; sourceTree = "<group>"; };
 		ABB4652A8D61789B93D24D77 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01BCB111B0D4F872D2C8439 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA663524E4341FF2F39871FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +169,18 @@
 				8A3BC6CF1C60EE9C009792FB /* SidebarViewController.m */,
 				8A3BC6D11C60EFDF009792FB /* HomeViewController.h */,
 				8A3BC6D21C60EFDF009792FB /* HomeViewController.m */,
+				8A66DAF61C63A56E00AF9FCC /* CallCloudViewController.h */,
+				8A66DAF71C63A56E00AF9FCC /* CallCloudViewController.m */,
+				8A66DAF91C63A5A700AF9FCC /* PushNotificationViewController.h */,
+				8A66DAFA1C63A5A700AF9FCC /* PushNotificationViewController.m */,
+				8A66DAFC1C63A5DF00AF9FCC /* LocationViewController.h */,
+				8A66DAFD1C63A5DF00AF9FCC /* LocationViewController.m */,
+				8A66DAFF1C63A61500AF9FCC /* DataBrowserViewController.h */,
+				8A66DB001C63A61500AF9FCC /* DataBrowserViewController.m */,
+				8A66DB021C63A65200AF9FCC /* NativeAppInfoViewController.h */,
+				8A66DB031C63A65200AF9FCC /* NativeAppInfoViewController.m */,
+				8A66DB051C63A67D00AF9FCC /* CloudIntegrationsViewController.h */,
+				8A66DB061C63A67D00AF9FCC /* CloudIntegrationsViewController.m */,
 				8A66DAF31C638BB000AF9FCC /* StatisticsViewController.h */,
 				8A66DAF41C638BB000AF9FCC /* StatisticsViewController.m */,
 				8A3BC6A21C60E5B8009792FB /* Assets.xcassets */,
@@ -395,10 +425,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A66DAF81C63A56E00AF9FCC /* CallCloudViewController.m in Sources */,
+				8A66DAFB1C63A5A700AF9FCC /* PushNotificationViewController.m in Sources */,
 				8A66DAF51C638BB000AF9FCC /* StatisticsViewController.m in Sources */,
+				8A66DAFE1C63A5DF00AF9FCC /* LocationViewController.m in Sources */,
+				8A66DB071C63A67D00AF9FCC /* CloudIntegrationsViewController.m in Sources */,
 				8A3BC69B1C60E5B8009792FB /* AppDelegate.m in Sources */,
+				8A66DB041C63A65200AF9FCC /* NativeAppInfoViewController.m in Sources */,
 				8A3BC6981C60E5B8009792FB /* main.m in Sources */,
 				8A3BC6D31C60EFDF009792FB /* HomeViewController.m in Sources */,
+				8A66DB011C63A61500AF9FCC /* DataBrowserViewController.m in Sources */,
 				8A3BC6D01C60EE9C009792FB /* SidebarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
